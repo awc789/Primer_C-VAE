@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/harry/Documents/Sars-Cov-2 Project/v3_Dataset/model/CNN_model.ckpt"
+all_model_checkpoint_paths: "/Users/harry/Documents/Sars-Cov-2 Project/v3_Dataset/model/CNN_model.ckpt"
