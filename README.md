@@ -109,6 +109,7 @@ ATTENTION:
 - Please use the [FastPCR](https://primerdigital.com/fastpcr.html) software for the In-Silico PCR to check the availability of the candidate primers.
 </td><tr></table></font>
 
+------
 
 ## Reference:
 This project is based on the work of **Alejandro Lopez‑Rincon**, **Alberto Tonda** and **Lucero Mendoza‑Maldonado**: [Classifcation and specifc primer design for accurate detection of SARS‑CoV‑2 using deep learning](https://www.nature.com/articles/s41598-020-80363-5.pdf)

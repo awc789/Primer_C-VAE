@@ -9,7 +9,7 @@ import time
 
 if __name__ == '__main__':
     start = time.time()
-    path = './Sars-Cov-2 Project/v5_Dataset/'
+    path = './v5_Dataset/'
     number = 2000
 
     primers = pd.read_csv(path + 'forward_primer_CG_check_Homo_Dimer_check.csv', header=None).values.ravel()
@@ -50,9 +50,12 @@ if __name__ == '__main__':
         limit = 1.01
         iterMax = 1
         # ------------------------------------------------
+        w0 = 6
+        wd0 = 21
+        h0 = 2
         w1 = 12
         wd1 = 21
-        h1 = int(vectorSize / 210) + 1  # 31029/148 ~ 210 ---> 31079/148 ~ 210
+        h1 = int(vectorSize / h0 / 210) + 1  # 31029/148 ~ 210 ---> 31079/148 ~ 210
         w4 = 256
         # ------------------------------------------------
         # initialize variables
@@ -87,10 +90,15 @@ if __name__ == '__main__':
         x_image = tf.transpose(x_image0, perm=[0, 3, 2, 1])  # arrange the tensor into 1 channels (1*30145)
 
         # 1 LAYER
-        W_conv1 = weight_variable([1, wd1, 1, w1])
+        W_conv0 = weight_variable([1, wd0, 1, w0])
+        b_conv0 = bias_variable([w0])
+        h_conv0 = tf.nn.relu(tf.nn.conv2d(x_image, W_conv0, strides=[1, 1, 1, 1], padding='SAME') + b_conv0) # output (-1, 1, vectorSize, 6)
+        h_pool0 = tf.nn.avg_pool(h_conv0, ksize=[1, 1, h0, 1], strides=[1, 1, h0, 1], padding='SAME') # output (-1, 1, vectorSize/h0, 6)
+
+        W_conv1 = weight_variable([1, wd1, w0, w1])
         b_conv1 = bias_variable([w1])
-        h_conv1 = tf.nn.relu(tf.nn.conv2d(x_image, W_conv1, strides=[1, 1, 1, 1], padding='SAME') + b_conv1)
-        h_pool1 = tf.nn.max_pool(h_conv1, ksize=[1, 1, h1, 1], strides=[1, 1, h1, 1], padding='SAME')
+        h_conv1 = tf.nn.relu(tf.nn.conv2d(h_pool0, W_conv1, strides=[1, 1, 1, 1], padding='SAME') + b_conv1) # output (-1, 1, vectorSize/h0, 12)
+        h_pool1 = tf.nn.max_pool(h_conv1, ksize=[1, 1, h1, 1], strides=[1, 1, h1, 1], padding='SAME') # output (-1, 1, 210, 12)
 
         # Rectifier LAYER
         coef = int(h_pool1.get_shape()[1] * h_pool1.get_shape()[2] * h_pool1.get_shape()[3])  # 1 * 209.34 * 12 ~ 2512
@@ -249,12 +257,12 @@ if __name__ == '__main__':
         print('\nThe first h_conv1 layer size:      h_conv1 = {}\n'.format(units.shape))
 
         sampleSize = int(data.shape[0])
-        Mat = np.zeros((sampleSize, vectorSize))
+        Mat = np.zeros((sampleSize, int(vectorSize/2)))
 
         for filterIndex in range(units.shape[3]):
             print('Loop 1 : Generating the  {}  Filter file'.format(filterIndex))
             for testSize in range(sampleSize):
-                for inputSize in range(vectorSize):
+                for inputSize in range(int(vectorSize/2)):
                     Mat[testSize][inputSize] = units[testSize][0][inputSize][filterIndex]
             pd.DataFrame(Mat).to_csv(path + '/filter/filter_' + str(filterIndex) + '.csv', header=None, index=None)
 
