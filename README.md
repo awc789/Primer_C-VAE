@@ -3,7 +3,9 @@ CORMSIS External Summer Project
 （Master Graduation Project）
 
 Tutor: 
+
 Dr. Alain Zemkoho (University of Southampton, UK)
+
 Dr Emmanuel Kagning-Tsinda (Tohoku University, Japan)
 
 2021-06 ---– Now
