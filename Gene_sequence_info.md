@@ -99,6 +99,52 @@ GISAID Dataset: (SARS-CoV-2)
 
 ◉	2021.06.27 — 2021.06.29&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 10,000 data
 
+#### – Omicron (B.1.1.529+BA.*)&emsp;&emsp;「Omicron」變種&emsp;&emsp;&emsp;135,383 data
+
+◉	2021.10.01 — 2021.12.07&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 8,948 data
+
+◉	2021.12.08 — 2021.12.10&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 8,068 data
+
+◉	2021.12.11 — 2021.12.12&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 6,973 data
+
+◉	2021.12.13 — 2021.12.13&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 7,124 data
+
+◉	2021.12.14 — 2021.12.14&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 9,191 data
+
+◉	2021.12.15 — 2021.12.15&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 23 data
+
+◉	2021.12.15 — 2021.12.15&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 7,754 data
+
+◉	2021.12.15 — 2021.12.15&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 2,898 data
+
+◉	2021.12.16 — 2021.12.16&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 5,034 data
+
+◉	2021.12.16 — 2021.12.16&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 5,632 data
+
+◉	2021.12.17 — 2021.12.17&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 6,204 data
+
+◉	2021.12.17 — 2021.12.17&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 8,361 data
+
+◉	2021.12.18 — 2021.12.18&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 7,392 data
+
+◉	2021.12.19 — 2021.12.19&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 7,603 data
+
+◉	2021.12.20 — 2021.12.20&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 6,535 data
+
+◉	2021.12.21 — 2021.12.21&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 6,303 data
+
+◉	2021.12.22 — 2021.12.22&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 4,012 data
+
+◉	2021.12.23 — 2021.12.27&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 9,113 data
+
+◉	2021.12.28 — 2021.12.31&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 279 data
+
+◉	2021.12.18 — 2021.12.18&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 2,788 data
+
+◉	2021.12.19 — 2021.12.21&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 9,600 data
+
+◉	2021.12.22 — 2021.12.31&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Total 5,548 data
+
 
 ## Mixed Data:
 
