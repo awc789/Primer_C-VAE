@@ -8,7 +8,7 @@ Dr. Alain Zemkoho (University of Southampton, UK)
 
 Dr. Emmanuel Kagning-Tsinda (Tohoku University, Japan)
 
-2021-06 ---– 2022-03
+2021-06 ---– 2022-06
 
 
 ## SARS-CoV-2 virus Gene Sequence Data
