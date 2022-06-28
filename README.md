@@ -89,6 +89,13 @@ ATTENTION:
 </td><tr></table></font>
 
 ------
+## Acknowledgement:
+We gratefully acknowledge the following Authors from the Originating laboratories responsible for obtaining the specimens and the Submitting laboratories where genetic sequence data were generated and shared via the GISAID Initiative, on which this research is based.
+
+    EPI_SET ID:	EPI_SET_20220628va
+    DOI:	https://doi.org/10.55876/gis8.220628va
+
+
 
 ## Reference:
 This project is based on the work of **Alejandro Lopez‑Rincon**, **Alberto Tonda** and **Lucero Mendoza‑Maldonado**: [Classifcation and specifc primer design for accurate detection of SARS‑CoV‑2 using deep learning](https://www.nature.com/articles/s41598-020-80363-5.pdf)
