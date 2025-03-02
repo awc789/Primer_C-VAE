@@ -54,7 +54,7 @@ ATTENTION:
 
 ![Overall Pipeline](https://github.com/awc789/Primer_C-VAE/blob/main/pic/Overall_Pipeline.png?raw=true)
 
-The Primer C-VAE methodology comprises four interconnected computational stages. \textbf{Stage I (Data Acquisition and Pre-processing)} encompasses sequence acquisition from genomic repositories, systematic taxonomic annotation, and strategic data curation to establish high-quality training datasets for downstream analysis. \textbf{Stage II (Forward Primer Design)} implements our trained convolutional variational autoencoder architecture to generate initial primer candidates, followed by frequency distribution analysis and thermodynamic property assessment to identify optimal forward primers with maximal discriminative capacity. \textbf{Stage III (Reverse Primer Design)} analyzes the downstream genomic regions adjacent to selected forward primer binding sites across target organism sequences, applying the C-VAE model in a second iteration to generate complementary reverse primer candidates, which undergo similar frequency and thermodynamic suitability filtering protocols. \textbf{Stage IV (In-silico PCR and Primer-BLAST Validation)} integrates selected forward and reverse primers into functional amplification pairs, evaluates their combinatorial properties including amplicon size and primer-dimer potential, and validates specificity through hierarchical assessment via BLAST sequence alignment followed by in-silico PCR amplification simulation.
+The Primer C-VAE methodology comprises four interconnected computational stages. **Stage I (Data Acquisition and Pre-processing)** encompasses sequence acquisition from genomic repositories, systematic taxonomic annotation, and strategic data curation to establish high-quality training datasets for downstream analysis. **Stage II (Forward Primer Design)** implements our trained convolutional variational autoencoder architecture to generate initial primer candidates, followed by frequency distribution analysis and thermodynamic property assessment to identify optimal forward primers with maximal discriminative capacity. **Stage III (Reverse Primer Design)** analyzes the downstream genomic regions adjacent to selected forward primer binding sites across target organism sequences, applying the C-VAE model in a second iteration to generate complementary reverse primer candidates, which undergo similar frequency and thermodynamic suitability filtering protocols. **Stage IV (In-silico PCR and Primer-BLAST Validation)** integrates selected forward and reverse primers into functional amplification pairs, evaluates their combinatorial properties including amplicon size and primer-dimer potential, and validates specificity through hierarchical assessment via BLAST sequence alignment followed by in-silico PCR amplification simulation.
 
 ![Primer C-VAE architecture](https://github.com/awc789/Primer_C-VAE/blob/main/pic/Primer_C-VAE_architecture.png?raw=true)
 
@@ -67,7 +67,7 @@ Primer C-VAE architecture implements a specialized convolutional encoder framewo
 
 ![Forward Primer Design](https://github.com/awc789/Primer_C-VAE/blob/main/pic/Flowchart_Forward.jpg?raw=true)
 
-After training the CNN model for Forward Primer Design, you can use the **`other_code/confusion_matrix.py`** file to generate a confusion matrix and plot the images to determine the accuracy of the model's classification results.
+After training the Primer C-VAE model for Forward Primer Design, you can use the **`other_code/confusion_matrix.py`** file to generate a confusion matrix and plot the images to determine the accuracy of the model's classification results.
 
 ![Confusion_Matrix](https://github.com/awc789/Primer_C-VAE/blob/main/pic/Confusion_Matrix.png?raw=true)
 
@@ -106,6 +106,15 @@ ATTENTION:
 - Please use the [FastPCR](https://primerdigital.com/fastpcr.html) or [Unipro UGENE](http://ugene.net/) software for the In-Silico PCR to check the availability of the candidate primers.
 </td><tr></table></font>
 
+
+## Primer Distribution
+
+![SARS-CoV-2 Primer Distribution](https://github.com/awc789/Primer_C-VAE/blob/main/pic/SARS-CoV-2%20Primer%20Distribution.png?raw=true)
+
+
+![S.flexneri Primer Distribution](https://github.com/awc789/Primer_C-VAE/blob/main/pic/S.flexneri%20Primer%20Distribution.png?raw=true)
+
+
 ------
 ## Acknowledgement:
 We gratefully acknowledge the following Authors from the Originating laboratories responsible for obtaining the specimens and the Submitting laboratories where genetic sequence data were generated and shared via the GISAID Initiative, on which this research is based.
@@ -116,4 +125,4 @@ We gratefully acknowledge the following Authors from the Originating laboratorie
 
 
 ## Reference:
-This project is based on the work of **Alejandro Lopez‑Rincon**, **Alberto Tonda** and **Lucero Mendoza‑Maldonado**: [Classifcation and specifc primer design for accurate detection of SARS‑CoV‑2 using deep learning](https://www.nature.com/articles/s41598-020-80363-5.pdf)
+This project is updated in March 2025, based on the previous work of **Hanyu Wang**, **Emmanuel K. Tsinda**, **Anthony J. Dunn**, **Francis Chikweto**, **Nusreen Ahmed**, **Emanuela Pelosi** and **Alain B. Zemkoho**: [Deep learning forward and reverse primer design to detect SARS-CoV-2 emerging variants](https://arxiv.org/abs/2209.13591)
