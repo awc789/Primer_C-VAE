@@ -89,9 +89,11 @@ Primer C-VAE architecture implements a specialized convolutional encoder framewo
 
 The architecture's training protocol optimizes these components simultaneously to maximize feature discrimination while preserving biological sequence integrity.
 
-## Forward Primer Design
+## Experiment 1: SARS-CoV-2 Emerging Variant Primer Design
 
-### Flowchart:
+### Forward Primer Design
+
+#### Flowchart:
 
 ![Forward Primer Design](https://github.com/awc789/Primer_C-VAE/blob/main/pic/Flowchart_Forward.jpg?raw=true)
 
@@ -99,13 +101,13 @@ After training the Primer C-VAE model for Forward Primer Design, you can use the
 
 ![Confusion Matrix](https://github.com/awc789/Primer_C-VAE/blob/main/pic/Confusion_Matrix.png?raw=true)
 
-## Reverse Primer Design
+### Reverse Primer Design
 
-### Flowchart:
+#### Flowchart:
 
 ![Reverse Primer Design](https://github.com/awc789/Primer_C-VAE/blob/main/pic/Flowchart_Reverse.jpg?raw=true)
 
-### Running the Code
+#### Running the Code
 
 **There are two ways to run the code:**
 
@@ -114,7 +116,7 @@ After training the Primer C-VAE model for Forward Primer Design, you can use the
    - Create a SageMaker Notebook
    - Clone this project:
      ```
-     !git clone https://github.com/awc789/Machine-Learning-Based-Primer-Identification-for-the-Detection-of-SARS-CoV-2-Emerging-Variants.git
+     !git clone https://github.com/awc789/Primer_C-VAE.git
      ```
    - Install the required packages:
      ```
