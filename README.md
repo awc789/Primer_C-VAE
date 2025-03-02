@@ -9,7 +9,8 @@ Dr. Alain Zemkoho (University of Southampton, UK)
 Dr. Emmanuel Kagning-Tsinda (Tohoku University, Japan)
 
 2021-06 ---– 2022-06
-updated on 2025-03
+
+Updated on 2025-03
 
 
 ## SARS-CoV-2 virus Gene Sequence Data
@@ -51,23 +52,31 @@ ATTENTION:
 
 ## Overall Pipeline and Primer C-VAE architecture
 
+![Overall Pipeline](https://github.com/awc789/Primer_C-VAE/blob/main/pic/Overall_Pipeline.png?raw=true)
+
+The Primer C-VAE methodology comprises four interconnected computational stages. \textbf{Stage I (Data Acquisition and Pre-processing)} encompasses sequence acquisition from genomic repositories, systematic taxonomic annotation, and strategic data curation to establish high-quality training datasets for downstream analysis. \textbf{Stage II (Forward Primer Design)} implements our trained convolutional variational autoencoder architecture to generate initial primer candidates, followed by frequency distribution analysis and thermodynamic property assessment to identify optimal forward primers with maximal discriminative capacity. \textbf{Stage III (Reverse Primer Design)} analyzes the downstream genomic regions adjacent to selected forward primer binding sites across target organism sequences, applying the C-VAE model in a second iteration to generate complementary reverse primer candidates, which undergo similar frequency and thermodynamic suitability filtering protocols. \textbf{Stage IV (In-silico PCR and Primer-BLAST Validation)} integrates selected forward and reverse primers into functional amplification pairs, evaluates their combinatorial properties including amplicon size and primer-dimer potential, and validates specificity through hierarchical assessment via BLAST sequence alignment followed by in-silico PCR amplification simulation.
+
+![Primer C-VAE architecture](https://github.com/awc789/Primer_C-VAE/blob/main/pic/Primer_C-VAE_architecture.png?raw=true)
+
+Primer C-VAE architecture implements a specialized convolutional encoder framework for discriminating genomic features between target organisms and their variant populations. This deep learning system integrates three critical functional modules: (1) a multi-layer convolutional encoder that systematically extracts hierarchical sequence features from raw genomic data, (2) a variational representation space where latent vectors $z$ are stochastically sampled via the reparameterization technique utilizing the learned distributional parameters $\mu$ and $\log\sigma^2$, and (3) a bifurcated computational pathway featuring both a classifier component for precise sequence categorization and a reconstruction decoder for generating sequence outputs. The architecture's training protocol optimizes these components simultaneously to maximize feature discrimination while preserving biological sequence integrity.
+
 
 ## Forward Primer Design
 
 ##### Flowchart of the project in this part：
 
-![截屏2022-04-25 23.32.16](https://i.imgur.com/lRsu4Rm.png)
+![Forward Primer Design](https://github.com/awc789/Primer_C-VAE/blob/main/pic/Flowchart_Forward.jpg?raw=true)
 
 After training the CNN model for Forward Primer Design, you can use the **`other_code/confusion_matrix.py`** file to generate a confusion matrix and plot the images to determine the accuracy of the model's classification results.
 
-![Confusion_Matrix](https://i.imgur.com/GYMqvr6.png)
+![Confusion_Matrix](https://github.com/awc789/Primer_C-VAE/blob/main/pic/Confusion_Matrix.png?raw=true)
 
 
 ## Reverse Primer Design
 
 ##### Flowchart of the project in this part：
 
-![截屏2022-04-25 23.34.14](https://i.imgur.com/sdr4BLN.png)
+![Reverse Primer Design](https://github.com/awc789/Primer_C-VAE/blob/main/pic/Flowchart_Reverse.jpg?raw=true)
 
 **There are two ways to run the codes:**
         
