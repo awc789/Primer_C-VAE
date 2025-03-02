@@ -1,4 +1,4 @@
-# Machine-Learning-Based-Primer-Identification-for-the-Detection-of-SARS-CoV-2-Emerging Variants
+# Primer C-VAE: An interpretable deep learning primer design method to detect emerging virus variants
 CORMSIS External Summer Project
 （Master Graduation Project）
 
@@ -9,6 +9,7 @@ Dr. Alain Zemkoho (University of Southampton, UK)
 Dr. Emmanuel Kagning-Tsinda (Tohoku University, Japan)
 
 2021-06 ---– 2022-06
+updated on 2025-03
 
 
 ## SARS-CoV-2 virus Gene Sequence Data
@@ -18,12 +19,11 @@ Dr. Emmanuel Kagning-Tsinda (Tohoku University, Japan)
 - NCBI (https://www.ncbi.nlm.nih.gov/)
 - ~~NGDC (https://big.ac.cn/ncov/?lang=en)~~
 
+The detail of the SARS-CoV-2 sequence data used in this project can be seen in the following file:
 
-The detail of the data used in this project can be seen in the following file:
+**`SARS_CoV_2_Gene_sequence_info.md`**
 
-**`Gene_sequence_info.md`**
-
-#### Overall 
+#### Overall
 - ##### For SARS-CoV-2 virus (Homo Sapiens Host):
     - The gene sequence data files downloaded from the **GISAID** database. If the classification of the variant virus has been completed, please move them to **`./Dataset/Variant_virus`** with correct variant types. Or please using the [Pangolin](https://cov-lineages.org/resources/pangolin.html) to make sure which type of variants that the gene sequence belongs to and then move to **`./Dataset/Variant_virus`** with correct variant types.
     - The gene sequence data files downloaded from the **NCBI** database need to use [Pangolin](https://cov-lineages.org/resources/pangolin.html) to make sure which type of variants that the gene sequence belongs to and then move to **`./Dataset/Variant_virus`** with correct variant types.
@@ -41,6 +41,15 @@ ATTENTION:
 </td><tr></table></font>
 
 ![](https://github.com/cov-lineages/pangolin/raw/master/docs/logo.png)
+
+
+## E.coli and S. flexneri Gene Sequence Data
+
+## Dataset:
+- NCBI (https://www.ncbi.nlm.nih.gov/)
+
+
+## Overall Pipeline and Primer C-VAE architecture
 
 
 ## Forward Primer Design
